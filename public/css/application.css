@@ -84,3 +84,12 @@ button {
     max-height: 80%;
 }
 
+.row-button{
+  text-align: center;
+  display: none;
+}
+
+.row-button a{
+  text-decoration: none;
+}
+
