@@ -1,24 +1,14 @@
-$(document).ready(function () {
-
-	$('.die').hide();
-  
-	$('form').submit(function(e){
+$(document).ready(function(){
+	$('#color-button').click(function(e){
 		e.preventDefault();
-	  	$('.die').show();
 
-	  	var input = $('input').serialize();
-
-	  	$.ajax({
-	  		method: "POST",
-	  		url: "/rolls",
-	  		data: input
-		  })
-		 .done(function( data ) {
-	    	$( '.roll' ).text(data);
-	  	});
-	  	
+		$.ajax({
+  			method: "GET",
+  			url: '/colors/random'
+	  	})
+	 	.done(function(data) {
+	 		$("li:nth-child("+data.cell+")").css("background-color",data.color);
+  	 	});
 
 	})
-
-
 });

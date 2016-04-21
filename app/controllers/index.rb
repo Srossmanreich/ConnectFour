@@ -1,12 +1,16 @@
 get '/' do
+  # Look in app/views/index.erb
   erb :index
 end
 
+get '/colors/random' do
 
-# TODO: convert this route to use AJAX
-post '/rolls' do
-	if request.xhr?
-  		@die = Die.new(params["sides"].to_i)
-  		@die.roll.to_s
-  	end
+  #Create and return a JSON object with the random cell and color given below.
+
+  cell_to_update = rand(9)
+  color_hexcode  = dbc_color_hexcode # See helpers
+
+  content_type :json
+      { cell: cell_to_update, color: color_hexcode }.to_json
+
 end

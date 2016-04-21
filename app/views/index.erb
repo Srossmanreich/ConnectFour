@@ -1,18 +1,24 @@
-<div class="container">
-  <h1>Simplest Possible AJAX</h1>
-  <p>This contrived app will simulate a roll of a n-sided die.</p>
+<!-- DO NOT MODIFY -->
+<header class="container center-text">
+  <h1>Color Wall</h1>
+</header>
 
-  <form method="post" action="/rolls">
-    <p>
-      <label name="sides"/>How many sides?</label>
-      <input name="sides" type="integer" placeholder="optional - default=6"/>
-    </p>
-    <p><input type="submit" value="Roll the Die"></p>
-  </form>
+<main role="main" class="container">
+  <section class="center-text">
+    <button id="color-button">Change a Cell Color</button>
+  </section>
 
-    <div class="die">
-      <span class="roll">
-      </span>
-    </div>
-
-</div>
+  <section>
+    <ul class="cells">
+      <li class="cell round-top-left"></li>
+      <li class="cell"></li>
+      <li class="cell round-top-right"></li>
+      <li class="cell"></li>
+      <li class="cell"></li>
+      <li class="cell"></li>
+      <li class="cell round-bottom-left"></li>
+      <li class="cell"></li>
+      <li class="cell round-bottom-right"></li>
+    </ul>
+  </section>
+</main>
