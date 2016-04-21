@@ -20,9 +20,13 @@ button {
   border-radius: 1em;
   outline: none;
 	display: block;
-  width: 100%;
+  width: 20%;
   margin: 0 auto;
-  padding: 2em;
+  padding: 1em;
+ }
+
+ button:hover {
+  background-color: #c8c8c8;
  }
 
  button:active {
@@ -38,7 +42,7 @@ button {
  }
 
  main section {
-  padding: 2em 0;
+  padding: 0.5em 0;
  }
 
   main section:first-of-type {
@@ -55,10 +59,10 @@ button {
 
 .cell{
   display: block;
-  width: 33.33%;
+  width: 14%;
   float: left;
   height: 0;
-  padding-bottom: 33.33%;
+  padding-bottom: 14%;
   background-color: #c8c8c8;
   margin: 0;
   border: solid white 3px;
@@ -68,29 +72,15 @@ button {
   margin: 0 auto;
   padding: 0;
   overflow: auto;
-  width: 100%;
+  width: 60%;
  }
 
 .container {
     margin: 0 auto;
     overflow: auto;
     width: 100%;
-    max-width: 400px;
+    max-width: 800px;
     padding: 0 1em;
+    max-height: 80%;
 }
 
-.round-top-left {
-  border-top-left-radius: 1em;
-}
-
-.round-top-right {
-  border-top-right-radius: 1em;
-}
-
-.round-bottom-left {
-  border-bottom-left-radius: 1em;
-}
-
-.round-bottom-right {
-  border-bottom-right-radius: 1em;
-}
