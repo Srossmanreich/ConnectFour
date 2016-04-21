@@ -26,6 +26,13 @@ class Board {
 	}
 };
 
+$(document).ready(function(){
+	$('#play-button').click(function(){
+		$('.row-button').show();
+		$(this).hide();
+	})
+})
+
 var board = new Board();
 board.addItem(0,RED);
 console.log(board.columns);
