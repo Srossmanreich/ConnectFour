@@ -6,6 +6,7 @@ const BLACK = 2;
 class Board {
 	constructor(){
 		this.columns = [];
+		this.turn = RED;
 
 		for(var i=0; i < 7; i++){
 			this.columns.push([])
@@ -24,15 +25,27 @@ class Board {
 		if (this.isColumnFull(x))
 			this.columns[x].push(token)
 	}
+
+	switchTurn(){
+		if (this.turn === RED){
+			this.turn = BLACK
+		} else {
+			this.turn = RED
+		};
+	}
 };
 
+var board = new Board();
+
 $(document).ready(function(){
+	
 	$('#play-button').click(function(){
-		$('.row-button').show();
+		$('.column-button').show();
 		$(this).hide();
 	})
-})
 
-var board = new Board();
-board.addItem(0,RED);
-console.log(board.columns);
+	$('.column-button').click(function(){
+		var colID = $(this).attr('id').split("-")[1]
+		board.addItem(colID,board.turn);
+	})
+})

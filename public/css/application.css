@@ -84,12 +84,25 @@ button {
     max-height: 80%;
 }
 
-.row-button{
+.column-button{
   text-align: center;
   display: none;
+  background-color: #19abb5;
+  border: none;
+  font-size: 0.8em;
+  border-radius: 1em;
+  outline: none;
+  width: 7%;
+  margin: 0 0.5em;
+  padding: 0.6em;
 }
 
-.row-button a{
+.column-button a{
   text-decoration: none;
+  color: white;
 }
+
+.column-button:hover {
+  background-color: #c8c8c8;
+ }
 
