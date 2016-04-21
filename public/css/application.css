@@ -20,9 +20,13 @@ button {
   border-radius: 1em;
   outline: none;
 	display: block;
-  width: 100%;
+  width: 20%;
   margin: 0 auto;
   padding: 2em;
+ }
+
+ button:hover {
+  background-color: #c8c8c8;
  }
 
  button:active {
@@ -75,22 +79,7 @@ button {
     margin: 0 auto;
     overflow: auto;
     width: 100%;
-    max-width: 400px;
+    max-width: 800px;
     padding: 0 1em;
 }
 
-.round-top-left {
-  border-top-left-radius: 1em;
-}
-
-.round-top-right {
-  border-top-right-radius: 1em;
-}
-
-.round-bottom-left {
-  border-bottom-left-radius: 1em;
-}
-
-.round-bottom-right {
-  border-bottom-right-radius: 1em;
-}
