@@ -6,7 +6,7 @@ A fun two player Connect Four webapp
 ***represent nice-to-haves (not MVP)
 
 Visual
-	- A user can see a board
+	x A user can see a board
 	- A user can see a styled board***
 
 Play
