@@ -22,7 +22,7 @@ button {
 	display: block;
   width: 20%;
   margin: 0 auto;
-  padding: 2em;
+  padding: 1em;
  }
 
  button:hover {
@@ -42,7 +42,7 @@ button {
  }
 
  main section {
-  padding: 2em 0;
+  padding: 0.5em 0;
  }
 
   main section:first-of-type {
@@ -59,10 +59,10 @@ button {
 
 .cell{
   display: block;
-  width: 33.33%;
+  width: 14%;
   float: left;
   height: 0;
-  padding-bottom: 33.33%;
+  padding-bottom: 14%;
   background-color: #c8c8c8;
   margin: 0;
   border: solid white 3px;
@@ -72,7 +72,7 @@ button {
   margin: 0 auto;
   padding: 0;
   overflow: auto;
-  width: 100%;
+  width: 60%;
  }
 
 .container {
@@ -81,5 +81,6 @@ button {
     width: 100%;
     max-width: 800px;
     padding: 0 1em;
+    max-height: 80%;
 }
 
